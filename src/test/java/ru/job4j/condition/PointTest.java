@@ -32,4 +32,22 @@ public class PointTest {
         Assert.assertEquals(expected, out, 0.001);
     }
 
+    @Test
+    public void when666to236then() {
+        Point a = new Point(6, 6, 6);
+        Point b = new Point(2, 3, 6);
+        double expected = 5;
+        double out = a.distance3d(b);
+        Assert.assertEquals(expected, out, 0.001);
+    }
+
+    @Test
+    public void when668to236then() {
+        Point a = new Point(6, 6, 8);
+        Point b = new Point(2, 3, 6);
+        double expected = 5.385;
+        double out = a.distance3d(b);
+        Assert.assertEquals(expected, out, 0.001);
+    }
+
 }
