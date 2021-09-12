@@ -10,6 +10,10 @@ public class Dentist extends Doctor {
         this.cabinetNumber = cabinetNumber;
     }
 
+    public Dentist(String nameOfHospital) {
+        super(nameOfHospital);
+    }
+
     public String getCabinetNumber() {
         return cabinetNumber;
     }

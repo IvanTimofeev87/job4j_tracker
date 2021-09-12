@@ -10,6 +10,10 @@ public class Engineer extends Profession {
         this.area = area;
     }
 
+    public  Engineer(String name, String surname, String education, String birthday) {
+        super(name, surname, education, birthday);
+    }
+
     public String getArea() {
         return area;
     }

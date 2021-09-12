@@ -7,6 +7,10 @@ public class Surgeon extends Doctor {
         this.dateOfOperation = dateOfOperation;
     }
 
+    public Surgeon(String nameOfHospital) {
+        super(nameOfHospital);
+    }
+
     public String getDateOfOperation() {
         return dateOfOperation;
     }

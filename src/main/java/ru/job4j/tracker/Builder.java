@@ -10,6 +10,10 @@ public class Builder extends Engineer {
         this.constructionObject = constructionObject;
     }
 
+    public Builder(String area) {
+        super(area);
+    }
+
     public String getConstructionObject() {
         return constructionObject;
     }
