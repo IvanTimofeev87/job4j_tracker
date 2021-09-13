@@ -3,15 +3,9 @@ package ru.job4j.tracker;
 public class Programmer extends Engineer {
     private String programmingLanguage;
 
-    public Programmer() {
-    }
-
-    public Programmer(String programmingLanguage, String name) {
+    public Programmer(String programmingLanguage, String name, String surname, String education, String birthday, String area) {
+        super(name, surname, education, birthday, area);
         this.programmingLanguage = programmingLanguage;
-    }
-
-    public Programmer(String area) {
-        super(area);
     }
 
     public String getProgrammingLanguage() {
