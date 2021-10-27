@@ -11,21 +11,21 @@ public class Library {
         books[1] = effectiveJava;
         books[2] = pragmaticProgrammer;
         books[3] = cleanCode;
-        for (int index = 0; index < books.length; index++) {
-            Book pr = books[index];
+        for (Book index : books) {
+            Book pr = index;
             System.out.println(pr.getName() + " - " + pr.getPages());
         }
         System.out.println("Switch 0 and 3 index.");
         books[0] = cleanCode;
         books[3] = codeComplete;
-        for (int index = 0; index < books.length; index++) {
-            Book pr = books[index];
+        for (Book index : books) {
+            Book pr = index;
             System.out.println(pr.getName() + " - " + pr.getPages());
         }
         System.out.println("Shown only cleanCode");
-        for (int index = 0; index < books.length; index++) {
-            Book pr = books[index];
-            if (pr.getName() == "Clean code") {
+        for (Book index : books) {
+            Book pr = index;
+            if ("Clean code".equals(pr.getName())) {
                 System.out.println(pr.getName() + " - " + pr.getPages());
             }
         }
