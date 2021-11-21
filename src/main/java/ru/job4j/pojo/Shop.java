@@ -7,24 +7,23 @@ public class Shop {
         products[1] = new Product("Bread", 4);
         products[2] = new Product("Egg", 19);
 
-        for (int i = 0; i < products.length; i++) {
-            Product product = products[i];
-            if (product != null) {
-                System.out.println(product.getName());
+        for (Product i : products) {
+            if (i != null) {
+                System.out.println(i.getName());
             }
         }
     }
 
     public static int indexOfNull(Product[] products) {
-        int indexOfNullElement = -1;
+        int result = -1;
 
         for (int i = 0; i < products.length; i++) {
             Product product = products[i];
             if (product == null) {
-                indexOfNullElement = i;
+                result = i;
                 break;
             }
         }
-        return indexOfNullElement;
+        return result;
     }
 }
