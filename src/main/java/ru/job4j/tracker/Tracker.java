@@ -65,10 +65,10 @@ public class Tracker {
         if (index != -1) {
             System.arraycopy(items, start, items, index, length);
             items[size - 1] = null;
+            size--;
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 
 }
