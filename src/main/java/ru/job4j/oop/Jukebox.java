@@ -5,7 +5,8 @@ public class Jukebox {
         if (position == 1) {
             System.out.println("Пусть бегут неуклюже\n" + "Пешеходы по лужам.");
         } else if (position == 2) {
-            System.out.println("Спят усталые игрушки, книжки спят.\n" + "Одеяла и подушки ждут ребят.");
+            System.out.println("Спят усталые игрушки, книжки спят.\n"
+                    + "Одеяла и подушки ждут ребят.");
         } else {
             System.out.println("Песня не найдена");
         }

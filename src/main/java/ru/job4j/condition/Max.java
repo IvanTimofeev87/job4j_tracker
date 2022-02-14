@@ -15,8 +15,10 @@ public class Max {
 
     public static void main(String[] args) {
         int biggestNumberFromThree = Max.max(6, 2, 7);
-        System.out.println(" First number 6, second number 2, third number 7. Biggest number is " + biggestNumberFromThree);
+        System.out.println(" First number 6, second number 2,"
+                + " third number 7. Biggest number is " + biggestNumberFromThree);
         int biggestNumberFromFour = Max.max(6, 2, 7, 9);
-        System.out.println(" First number 6, second number 2, third number 7, fourth number 9. Biggest number is " + biggestNumberFromFour);
+        System.out.println(" First number 6, second number 2,"
+                + " third number 7, fourth number 9. Biggest number is " + biggestNumberFromFour);
     }
 }
