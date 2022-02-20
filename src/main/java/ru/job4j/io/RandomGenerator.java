@@ -5,11 +5,12 @@ import java.util.Random;
 public class RandomGenerator {
     public static String createAnswer() {
         int answer = new Random().nextInt(3);
+        String rsl = "Может быть";
         if (answer == 0) {
-            return "Да";
+            rsl = "Да";
         } else if (answer == 1) {
-            return "Нет";
+           rsl = "Нет";
         }
-        return "Может быть";
+        return rsl;
     }
 }
