@@ -7,8 +7,8 @@ public class Bus implements Transport {
     }
 
     @Override
-    public int numbersOfPassengers(int numbers) {
-        return numbers;
+    public void numbersOfPassengers(int numbers) {
+        System.out.println("Numbers of passengers in bus: " + numbers);
     }
 
     @Override
